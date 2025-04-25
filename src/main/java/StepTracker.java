@@ -22,7 +22,7 @@ public class StepTracker
  }
  public double averageSteps(){
   double sum = 0;
-   for(int i = 0;i<stepsPerDay;i++){
+   for(int i = 0;i<stepsPerDay.size();i++){
       sum+=stepsPerDay.get(i);
    }
   return sum/stepsPerDay.size();
