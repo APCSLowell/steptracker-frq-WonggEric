@@ -12,9 +12,9 @@ public class StepTracker
  }
 
  public void addDailySteps(int steps){
+  stepsPerDay.add(steps);
    if(steps>=myMin){
-      daysActive++;
-      stepsPerDay.add(steps);
+    daysActive++;
    }
  }
  public int activeDays(){
@@ -22,6 +22,9 @@ public class StepTracker
  }
  public double averageSteps(){
   double sum = 0;
+  if(stepsPerDay.size()==0){
+     return 0.0;
+  }
    for(int i = 0;i<stepsPerDay.size();i++){
       sum+=stepsPerDay.get(i);
    }
