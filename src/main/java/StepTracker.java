@@ -16,6 +16,7 @@ public class StepTracker
       daysActive++;
       stepsPerDay.add(steps);
    }
+ }
  public int activeDays(){
    return daysActive;
  }
