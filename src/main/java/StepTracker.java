@@ -3,7 +3,7 @@ public class StepTracker
 {
  int myMin;
  int daysActive;
- ArrayList <int> stepsPerDay;
+ ArrayList <Integer> stepsPerDay;
  /* to be implemented here */
  public StepTracker(int min){
     myMin = min;
@@ -12,7 +12,7 @@ public class StepTracker
  }
 
  public void addDailySteps(int steps){
-   if(steps>=min){
+   if(steps>=myMin){
       daysActive++;
       stepsPerDay.add(steps);
    }
